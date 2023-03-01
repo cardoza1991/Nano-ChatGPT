@@ -1,0 +1,26 @@
+It is not recommended to put all of the text data into a single Python file as this can make the file large and difficult to manage. 
+Instead, it is more common to store the text data in a separate file or files and then load the data into your Python script as needed.
+
+There are several file formats that can be used to store text data, including plain text files, CSV files, and JSON files. 
+The choice of file format will depend on the structure of your data and how you plan to use it in your model.
+
+For example, if you have a large amount of text data that is not structured, a plain text file might be the most appropriate format. 
+If your data is structured and contains multiple columns or fields, a CSV file might be a better choice. 
+If you want to store more complex data structures such as dictionaries or nested lists, a JSON file might be the best option.
+
+Once you have stored your text data in a file or files, you can use Python's built-in file handling functions to read the data into your script. 
+For example, you can use the open() function to open a file, and then use the read() function to read the contents of the file into a string variable.
+
+Here is an example of how to read text data from a plain text file:
+# Open the file for reading
+with open('data.txt', 'r') as f:
+    # Read the contents of the file into a string variable
+    text_data = f.read()
+
+# Print the text data
+print(text_data)
+
+
+In this example, data.txt is the name of the file that contains the text data. 
+The with statement is used to open the file and ensure that it is closed properly when the block of code is finished. 
+The read() function is used to read the contents of the file into the text_data variable, which can then be used in your model.
